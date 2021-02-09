@@ -28,19 +28,6 @@ export class HeaderComponent extends Component {
         MiniReact.createElement(
           "a",
           {
-            class: routeHome.getClassName(),
-            id: routeHome.getId(),
-            href: "." + routeHome.getPath(),
-            style:
-              this.selectedLink === routeHome.getPath()
-                ? "text-decoration: underline"
-                : ""
-          },
-          routeHome.getName()
-        ),
-        MiniReact.createElement(
-          "a",
-          {
             class: routeJitter.getClassName(),
             id: routeJitter.getId(),
             href: "." + routeJitter.getPath(),
@@ -63,19 +50,6 @@ export class HeaderComponent extends Component {
                 : ""
           },
           routeScore.getName()
-        ),
-        MiniReact.createElement(
-          "a",
-          {
-            class: routeFile.getClassName(),
-            id: routeFile.getId(),
-            href: "." + routeFile.getPath(),
-            style:
-              this.selectedLink === routeFile.getPath()
-                ? "text-decoration: underline"
-                : ""
-          },
-          routeFile.getName()
         )
       )
     );
