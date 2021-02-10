@@ -5,17 +5,17 @@ import { Component } from "./../React/Rcomponent.js";
 export class HeaderComponent extends Component {
   constructor(properties) {
     super(properties);
-    this.headerTitle = "4IW1 SIKLI - HEDOO".snake_case();
+    this.headerTitle = "4IW1 SIKLI - HEDOO";
     this.routes = prop_access(properties.router, "routes");
     this.selectedLink = window.location.pathname;
   }
 
   render = () => {
-    var routeScore = this.routes.filter(function(r) {
-      return r.getId() === "score";
+    var routePoints = this.routes.filter(function(r) {
+      return r.getId() === "points";
     })[0];
-    var routeJitter = this.routes.filter(function(r) {
-      return r.getId() === "jitterclick";
+    var routeClicker = this.routes.filter(function(r) {
+      return r.getId() === "clicker";
     })[0];
 
     const result = MiniReact.createElement(
@@ -28,29 +28,16 @@ export class HeaderComponent extends Component {
         MiniReact.createElement(
           "a",
           {
-            class: routeJitter.getClassName(),
-            id: routeJitter.getId(),
-            href: "." + routeJitter.getPath(),
+            class: routeClicker.getClassName(),
+            id: routeClicker.getId(),
+            href: "." + routeClicker.getPath(),
             style:
-              this.selectedLink === routeJitter.getPath()
+              this.selectedLink === routeClicker.getPath()
                 ? "text-decoration: underline"
                 : ""
           },
-          routeJitter.getName()
+          routeClicker.getName()
         ),
-        MiniReact.createElement(
-          "a",
-          {
-            class: routeScore.getClassName(),
-            id: routeScore.getId(),
-            href: "." + routeScore.getPath(),
-            style:
-              this.selectedLink === routeScore.getPath()
-                ? "text-decoration: underline"
-                : ""
-          },
-          routeScore.getName()
-        )
       )
     );
 

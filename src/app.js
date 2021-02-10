@@ -1,8 +1,9 @@
-import { MiniReactDOM } from "./lib/react.js";
+import { MiniReactDOM } from "./React/core.js";
 import { router, route } from "./router.js";
-import { HeaderComponent } from "./component/header-component.js";
-import { PageComponent } from "./component/page-component.js";
-import { JitterComponent } from "./component/jitter-component.js";
+import { HeaderComponent } from "./Components/header.js";
+import { PageComponent } from "./Components/front.js";
+import { ClickerComponent } from "./Components/clicker.js";
+
 
 
 MiniReactDOM.render(PageComponent, document.getElementById("root"), {});
@@ -14,11 +15,27 @@ MiniReactDOM.render(HeaderComponent, document.getElementById("header"), {
 var promise = new Promise(function(resolve, reject) {
   var contentElement = document.getElementById("content");
   if (contentElement)
-    resolve("Content element found !  MiniReact can work ! Yay !");
+    resolve("test ok");
   else
     reject(
       Error(
-        "No  ontent element found... MiniReact won't work :( Please use Google Chrome !"
+        "test failed"
       )
     );
 });
+promise.then(
+  function(result) {
+    var contentElement = document.getElementById("content");
+    console.log(result);
+    switch (!route ? null : route.getId()) {
+      case "clicker":
+        MiniReactDOM.render(ClickerComponent, contentElement, {
+          interval: 10
+        });
+        break;
+    }
+  },
+  function(err) {
+    console.log(err);
+  }
+);

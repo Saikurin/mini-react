@@ -1,5 +1,5 @@
-import { isStateLessComponent } from "./react-utils.js";
-import { Component } from "./react-component.js";
+import { isStateLessComponent } from "./Rutils.js";
+import { Component } from "./Rcomponent.js";
 
 function anElement(element, properties, children) {
   if (element.isClass()) {

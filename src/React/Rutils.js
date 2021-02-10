@@ -1,11 +1,3 @@
-String.prototype.snake_case = function() {
-  var input = this;
-  return input
-    .toLowerCase()
-    .split(" ")
-    .join("_");
-};
-
 Object.prototype.isClass = () => {
   return (
     typeof this === "function" &&

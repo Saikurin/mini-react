@@ -1,0 +1,64 @@
+body {
+  background: beige;
+  color:black;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  min-width: 100px;
+}
+
+a:hover {
+  color: white;
+}
+
+
+.container {
+  width: 50%;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-5 {
+  margin-bottom: 5em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mt-5 {
+  margin-top: 5em;
+}
+
+.btn {
+  color: green;
+  border-radius: 3px;
+  border-color:green;
+  background: rgba(0, 0, 0, 0);
+}
+
+body {
+  color:black;
+  background-color:white;
+  background-image:url(../zorg.jpg)
+  }
+
+.btn:hover {
+  color: black;
+  border-radius: 3px;
+  border-color:red;
+  background:red;
+}

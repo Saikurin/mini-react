@@ -41,7 +41,7 @@ export class ClickerComponent extends Component {
       MiniReact.createElement(
         "h1",
         { class: "text-center" },
-        `Counter : ${this.state.time != null ? this.state.time : "Pret ?"}`
+        `chrono : ${this.state.time != null ? this.state.time : "Pret ?"}`
       ),
       MiniReact.createElement(
         "div",
@@ -71,9 +71,9 @@ export class ClickerComponent extends Component {
       this.scoreboard.you = this.nbr_click;
       localStorage.setItem("points", JSON.stringify(this.scoreboard));
     }
-    if (this.nbr_click < 20) alert("Peut mieux faire");
-    else if (this.nbr_click == 61) alert("Vous avez vaincu botnet");
-    else alert("Botnet est mort");
+    if (this.nbr_click < 26) alert("Peut mieux faire");
+    else if (this.nbr_click == 50) alert("Vous avez vaincu zorg");
+    else alert("Zorg est mort");
   };
   setListener = () => {
     var element = document.getElementById("clicker");
