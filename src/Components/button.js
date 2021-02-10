@@ -1,5 +1,5 @@
-import { MiniReact } from "../lib/react.js";
-import { Component } from "../lib/react-component.js";
+import { MiniReact } from "../React/core.js";
+import { Component } from "../React/Rcomponent.js";
 
 export class ButtonComponent extends Component {
   constructor(properties) {

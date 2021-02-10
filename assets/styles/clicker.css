@@ -1,0 +1,15 @@
+#clicker {
+  margin: auto;
+  border: 5px solid greenyellow;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#clicker:hover {
+  border: 2px solid rgb(0, 255, 128);
+}
+
+
+.align-middle {
+  vertical-align: middle!important;
+}
