@@ -1,6 +1,6 @@
-import { MiniReact } from "../lib/react.js.js";
-import { Component } from "../lib/react-component.js.js";
-import { prop_access } from "../lib/react-utils.js.js";
+import { MiniReact } from "../React/core.js";
+import { Component } from "../React/Rcomponent";
+import { prop_access } from "../React/Rutils";
 
 export class TableComponent extends Component {
   constructor(properties) {

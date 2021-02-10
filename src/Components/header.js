@@ -1,6 +1,6 @@
-import { prop_access } from "../lib/react-utils.js";
-import { MiniReact } from "../lib/react.js";
-import { Component } from "./../lib/react-component.js";
+import { prop_access } from "../React/Rutils.js";
+import { MiniReact } from "../React/core.js";
+import { Component } from "./../React/Rcomponent.js";
 
 export class HeaderComponent extends Component {
   constructor(properties) {

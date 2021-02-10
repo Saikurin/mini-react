@@ -1,9 +1,9 @@
-import { type_check, prop_access } from "../lib/react-utils.js";
-import { MiniReact } from "../lib/react.js";
-import { Component } from "./../lib/react-component.js";
-import { ButtonComponent } from "./button-component.js";
+import { type_check, prop_access } from "../React/Rutils.js";
+import { MiniReact } from "../React/core.js";
+import { Component } from "./../React/Rcomponent.js";
+import { ButtonComponent } from "./button.js";
 
-export class JitterComponent extends Component {
+export class ClickerComponent extends Component {
   scoreboard = {
     you: 0
   };

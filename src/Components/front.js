@@ -1,5 +1,5 @@
-import { MiniReact } from "../lib/react.js.js";
-import { Component } from "../lib/react-component.js.js";
+import { MiniReact } from "../React/core.js";
+import { Component } from "../React/Rcomponent.js";
 
 export class PageComponent extends Component {
   constructor(properties) {

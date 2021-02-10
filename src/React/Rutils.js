@@ -104,7 +104,6 @@ export function prop_access(object, path) {
   for (let i = 0; i < pathArray.length; i++) {
     object = object[pathArray[i]];
     if (object === undefined) {
-      console.log(pathArray.slice(0, i + 1).join(".") + " not exist");
       return null;
     }
   }
